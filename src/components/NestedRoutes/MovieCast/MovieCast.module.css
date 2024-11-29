@@ -1,0 +1,7 @@
+.actor_list {
+    margin-left: 1rem;
+}
+
+.actor_list_item > * {
+    margin-bottom: 0.8rem;
+}

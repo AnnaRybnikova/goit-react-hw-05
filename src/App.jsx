@@ -5,8 +5,8 @@ import Header from "./components/Header/Header";
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const MoviesPage = lazy(() => import("./pages/MoviesPage/MoviesPage"));
 const MovieDetailsPage = lazy(() => import("./pages/MovieDetailsPage/MovieDetailsPage"));
-const MovieCast = lazy(() => import("./components/NestedRoutes/MovieCast"));
-const MovieReviews = lazy(() => import("./components/NestedRoutes/MovieReviews"));
+const MovieCast = lazy(() => import("./components/NestedRoutes/MovieCast/MovieCast"));
+const MovieReviews = lazy(() => import("./components/NestedRoutes/MovieReviews/MovieReviews"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
 
 function App() {

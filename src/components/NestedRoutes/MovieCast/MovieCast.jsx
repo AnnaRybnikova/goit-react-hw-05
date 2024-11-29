@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchMovieCastByMovieId } from '../../services/api';
+import { fetchMovieCastByMovieId } from '../../../services/api';
+import s from './MovieCast.module.css';
 
 const MovieCast = () => {
     const { movieId } = useParams();
@@ -16,11 +17,11 @@ const MovieCast = () => {
     }, [movieId]);
 
     return (
-        <ul>
+        <ul className={s.actor_list}>
             {cast && !cast.length && <h2>Movie has no reviews</h2>}
             {cast?.map((actor) => (
-                <li key={actor.id}>
-                    <img src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`}/>
+                <li className={s.actor_list_item} key={actor.id}>
+                    <img src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`} width="90" height="120"/>
                     <p>{actor.name}</p>
                     <p>Character: {actor.character}</p>
                 </li>

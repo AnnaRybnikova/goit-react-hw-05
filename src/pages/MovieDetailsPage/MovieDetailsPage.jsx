@@ -45,7 +45,6 @@ const MovieDetailsPage = () => {
                             <li key={genre.id}>{genre.name}</li>
                         )
                     })}
-
                     </ul>
                 </div>
             </div>
@@ -61,6 +60,8 @@ const MovieDetailsPage = () => {
                         </li>
                     </ul>
                 </nav>
+            </div>
+            <div className='container'>
                 <Suspense fallback='Loading more info...'>
                     <Outlet />
                 </Suspense>

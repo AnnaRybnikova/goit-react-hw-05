@@ -1,0 +1,11 @@
+.reviews_list {
+    margin-left: 1rem;
+}
+
+.reviews_list_item > p {
+    margin-bottom: 0.8rem;
+}
+
+.reviews_list_item > .author {
+    font-weight: bold;
+}
