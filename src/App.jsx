@@ -11,11 +11,10 @@ const MovieReviews = lazy(() => import("./components/NestedRoutes/MovieReviews")
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
 
 function App() {
-
   return (
     <div>
       <Header />
-      <Suspense>
+      <Suspense fallback='Loading...'>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/movies" element={<MoviesPage />} />
