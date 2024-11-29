@@ -35,7 +35,7 @@ const MovieDetailsPage = () => {
                 <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} width="300" height="400" />
                 <div className={s.movie_info_container}>
                     <h2 className={s.header}>{`${movie.title} (${ movie.release_date.split('-')[0]})`}</h2>
-                    <p>User Score: {movie.vote_count}%</p>
+                    <p>User Score: {Math.round(movie.vote_average * 10)}%</p>
                     <h3>Overview</h3>
                     <p>{movie.overview}</p>
                     <h3>Genres</h3>
