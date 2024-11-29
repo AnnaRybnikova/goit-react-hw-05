@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import s from './MovieList.module.css';
 
 const MovieList = ({ movies, location }) => {
     return (
         <div>
-            <ul>
+            <ul className={s.movie_list}>
                 {movies.map(movie => {
                     return (<li key={movie.id}>
                         <Link to={`/movies/${movie.id.toString()}`} state={location}>

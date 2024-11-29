@@ -1,16 +1,19 @@
-/* .nav {
+.nav {
     display: flex;
     gap: 10px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 
     a {
-        color: white;
+        color: black;
         font-weight: bold;
         text-decoration: none;
     }
 
     .active {
-        text-decoration: underline;
-        color: black;
+        color: red;
     }
-} */
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
