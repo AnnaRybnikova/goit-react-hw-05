@@ -1,4 +1,3 @@
-import './App.css';
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
@@ -12,7 +11,7 @@ const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
 
 function App() {
   return (
-    <div className='app'>
+    <div>
       <Header />
       <Suspense fallback='Loading...'>
         <Routes>

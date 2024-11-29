@@ -1,0 +1,53 @@
+.back_link_container {
+    padding-bottom: 0;
+    display: flex;
+}
+
+.back_link {
+    padding: 0.05rem 0.2rem;
+    border: solid 0.7px black;
+    border-radius: 0.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+
+    text-decoration: none;
+    color: black;
+}
+
+.back_link:hover {
+    background-color: lightgray;
+}
+
+.movie_container,
+.additional_info_container
+ {
+    border-bottom: solid 1px gray;
+}
+
+.movie_container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.movie_info_container > * {
+    margin-bottom: 1rem;
+}
+
+.genres_list {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.genres_list > li {
+    list-style-type: none;
+}
+
+.additional_info_container > * {
+    margin-bottom: 1rem;
+}
+
+.nav > ul {
+    margin-left: 1.5rem;
+}
