@@ -18,7 +18,7 @@ const MovieCast = () => {
 
     return (
         <ul className={s.actor_list}>
-            {cast && !cast.length && <h2>Movie has no reviews</h2>}
+            {cast && !cast.length && <p>We don`t have any cast list for this movie.</p>}
             {cast?.map((actor) => (
                 <li className={s.actor_list_item} key={actor.id}>
                     <img src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`} width="90" height="120"/>
